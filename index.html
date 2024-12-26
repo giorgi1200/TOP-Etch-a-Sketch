@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Grid with Eraser</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="title">
+    <h1>Etch-a-Sketch</h1>
+  </div>
+  <div id="size">Size: <span id="gridSize">16</span>x<span id="gridSize">16</span></div>
+  <input type="range" id="slider" min="4" max="64" value="16" step="1">
+
+  <form id="color-picker">
+    <h2>Pick a color</h2>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  </form>
+  <button id="eraserButton">Eraser ✏️</button>
+    <button id="clearButton">Clear 🧹</button>
+
+
+  <div id="container"></div>
+
+</body>
+</html>
